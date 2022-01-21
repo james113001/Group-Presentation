@@ -8,7 +8,7 @@ bin-release/
 .settings/
 
 # Data 
-*/rds/general/project/hda_21_22/live/TDS/General
+*/rds/general/project/hda_21_22/live/TDS/General/
 
 # Executables
 *.swf

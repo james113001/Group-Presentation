@@ -9,6 +9,8 @@ bin-release/
 
 # Data 
 */rds/general/project/hda_21_22/live/TDS/General/
+*/rds/general/project/hda_21-22/live/TDS/Group_8/Group-Presentation/extraction_and_recording/outputs
+
 
 # Executables
 *.swf

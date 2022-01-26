@@ -1,3 +1,0 @@
-/var/spool/PBS/mom_priv/jobs/5032265.pbs.SC: line 5: cd: /rds/general/user/bbodinie/projects/hda_21-22/live/TDS/General/extraction_and_recoding/scripts: Permission denied
-Loading anaconda3/personal
-  Loading requirement: fix_unwritable_tmp fix_setxattr

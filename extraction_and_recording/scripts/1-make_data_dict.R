@@ -9,13 +9,13 @@ args <- commandArgs(trailingOnly = TRUE)
 ukb_path <- as.character(args[1])
 
 # Creating the parametrisation folder
-dir.create("../parameters", showWarnings = FALSE)
+dir.create("/rds/general/project/hda_21-22/live/TDS/Group_8/Group-Presentation/extraction_and_recording/parameters", showWarnings = FALSE)
 
 # Loading the data
 ukb_main_columns <- colnames(fread(ukb_path, data.table = FALSE, nrows = 0)) # unique IDS from current UKBB basket
 
 # Loading UK Biobank files
-dict <- fread("../docs/Data_Dictionary_Showcase.csv", data.table = FALSE) # Data dictionary from UKBB: https://biobank.ctsu.ox.ac.uk/crystal/exinfo.cgi?src=accessing_data_guide
+dict <- fread("/rds/general/project/hda_21-22/live/TDS/Group_8/Group-Presentation/extraction_and_recording/docs/Data_Dictionary_Showcase.csv", data.table = FALSE) # Data dictionary from UKBB: https://biobank.ctsu.ox.ac.uk/crystal/exinfo.cgi?src=accessing_data_guide
 
 # Extracting field IDs
 IDs <- unique(gsub("-.*", "", gsub("X", "", ukb_main_columns))) # unique IDS from application. Removing array & instance info.
@@ -65,4 +65,4 @@ wb <- createWorkbook()
 addWorksheet(wb, "Fields")
 writeData(wb, sheet = "Fields", matchedDict)
 freezePane(wb, sheet = "Fields", firstRow = TRUE, firstCol = TRUE)
-saveWorkbook(wb, "../parameters/selection.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "/rds/general/project/hda_21-22/live/TDS/Group_8/Group-Presentation/extraction_and_recording/parameters/selection.xlsx", overwrite = TRUE)

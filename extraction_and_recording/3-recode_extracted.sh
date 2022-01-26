@@ -3,7 +3,7 @@
 #PBS -N recoding
 #PBS -q med-bio
 
-cd /rds/general/user/bbodinie/projects/hda_21-22/live/TDS/General/extraction_and_recoding/scripts
+cd /rds/general/project/hda_21-22/live/TDS/Group_8/Group-Presentation/extraction_and_recording/scripts
 module load anaconda3/personal
 
 Rscript 3-recode_variables.R

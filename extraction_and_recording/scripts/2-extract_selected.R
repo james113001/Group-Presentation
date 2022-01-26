@@ -18,7 +18,7 @@ args <- commandArgs(trailingOnly = TRUE)
 ukb_path <- as.character(args[1])
 
 # Loading xlsx file with selections
-choices <- read.xlsx("../parameters/selection.xlsx")
+choices <- read.xlsx("../parameters/selection1.xlsx")
 
 # Printing message
 print(paste0("N=", sum(!is.na(choices$CodingName)), " field IDs have been selected for extraction:"))
@@ -57,7 +57,7 @@ rownames(choices) <- choices$CodingName
 
 
 # Loading coding provided by UK Biobank
-codings <- fread("../docs/Codings.csv", data.table = FALSE) # Codings for categorical outcomes: https://biobank.ctsu.ox.ac.uk/crystal/exinfo.cgi?src=accessing_data_guide
+codings <- fread("/rds/general/project/hda_21-22/live/TDS/General/extraction_and_recoding/docs/Codings.csv", data.table = FALSE) # Codings for categorical outcomes: https://biobank.ctsu.ox.ac.uk/crystal/exinfo.cgi?src=accessing_data_guide
 
 # Extracting the relevant data coding
 coding_ids <- unique(choices$Coding)

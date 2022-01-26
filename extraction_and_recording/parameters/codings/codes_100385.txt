@@ -1,0 +1,7 @@
+"OriginalValue" "OriginalMeaning" "RecodedValue" "RecodedMeaning"
+"-3" "Prefer not to answer" "-3" "Prefer not to answer"
+"1" "Eggs or foods containing eggs" "1" "Eggs or foods containing eggs"
+"2" "Dairy products" "2" "Dairy products"
+"3" "Wheat products" "3" "Wheat products"
+"4" "Sugar or foods/drinks containing sugar" "4" "Sugar or foods/drinks containing sugar"
+"5" "I eat all of the above" "5" "I eat all of the above"
